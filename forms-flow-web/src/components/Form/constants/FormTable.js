@@ -20,6 +20,7 @@ import SelectFormForDownload from "../FileUpload/SelectFormForDownload";
 import LoadingOverlay from "react-loading-overlay";
 import { STAFF_DESIGNER } from "../../../constants/constants";
 import { getBundle } from "../../../apiManager/services/bundleServices";
+import { t } from "i18next";
 
 function FormTable() {
   const dispatch = useDispatch();
@@ -169,8 +170,8 @@ function FormTable() {
               className="d-flex align-items-center justify-content-center flex-column w-100"
               style={{ minHeight: "300px" }}
             >
-              <h3>No forms found</h3>
-              <p>Please change the selected filters to view Forms</p>
+              <h3>{t("No forms found")}</h3>
+              <p>{t("Please change the selected filters to view Forms")}</p>
             </div>
           </td>
         </tr>
@@ -192,7 +193,7 @@ function FormTable() {
                         setSearch(e.target.value);
                       }}
                       onKeyDown={(e)=> e.keyCode == 13 ? handleSearch() : ""}
-                      placeholder="Search..."
+                      placeholder= {t("Search...")}
                       style={{ backgroundColor: "#ffff" }}
                     />
                     {search && (
@@ -221,13 +222,13 @@ function FormTable() {
                         style={{ backgroundColor: "#ffff" }}
                       >
                         <option selected={formType === "form"} value="form">
-                          Form
+                          {t("Form")}
                         </option>
                         <option
                           selected={formType === "resource"}
                           value="resource"
                         >
-                          Resource
+                          {t("Resource")}
                         </option>
                       </Form.Control>
                     )}
@@ -237,13 +238,13 @@ function FormTable() {
               <tr className="table-header table-bordered">
               <th scope="col">
               <span className="sort-cell">
-                    <span> Form Name</span>
+                    <span> {t("Form Name")}</span>
                       <span > 
                      {isAscending ? (
                         <i
                         className="fa fa-sort-alpha-asc m"
                         onClick={() => {updateSort("desc");}}
-                        data-toggle="tooltip"  title="Descending"
+                        data-toggle="tooltip"  title={t("Descending")}
                         style={{
                           cursor: "pointer",
                           fontSize : "16px",
@@ -255,7 +256,7 @@ function FormTable() {
                         <i
                         className="fa fa-sort-alpha-desc"
                         onClick={() => {updateSort("asc");}}
-                        data-toggle="tooltip"  title="Ascending" 
+                        data-toggle="tooltip"  title={t("Ascending" )}
                         style={{
                           cursor: "pointer",
                           fontSize : "16px",
@@ -268,7 +269,7 @@ function FormTable() {
                       </span>
               </span>
               </th>
-                <th scope="col">Operations</th>
+                <th scope="col">{t("Operations")}</th>
                 {isDesigner && (
                   <th scope="col">
                     <SelectFormForDownload type="all" />
@@ -331,7 +332,7 @@ function FormTable() {
         <div className="d-flex justify-content-between align-items-center">
           <div>
             <span>
-              Rows per page
+              {t("Rows per page")}
               <DropdownButton
                 className="ml-2"
                 drop="down"
@@ -353,9 +354,9 @@ function FormTable() {
               </DropdownButton>
             </span>
             <span className="ml-2 mb-3">
-            Showing {(limit * pageNo ) - (limit - 1)} to{" "}
-                  {limit * pageNo > totalForms ? totalForms : limit * pageNo} of{" "}
-                  {totalForms} entries
+            {t("Showing")} {(limit * pageNo ) - (limit - 1)} {t("to")}{" "}
+                  {limit * pageNo > totalForms ? totalForms : limit * pageNo} {t("of")}{" "}
+                  {totalForms} {t("entries")}
             </span>
           </div>
           <div className="d-flex align-items-center">

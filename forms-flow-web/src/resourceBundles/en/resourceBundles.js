@@ -276,10 +276,35 @@ export const RESOURCE_BUNDLES_EN = {
   "Click Here to Copy":"Click Here to Copy",
   "Resources":"Resources",
   "Duplicate form created successfully":"Duplicate form created successfully",
-  "Revert": "Revert"
-
-
-
+  "Revert": "Revert",
+  "Bundle Name": "Bundle Name",
+  "View/Edit": "View/Edit",  
+  "Create Bundle": "Create Bundle",
+  "Rows per page": "Rows per page",
+  "entries": "entries",
+  "Form Bundle": "Form Bundle",
+  "No bundles found": "No bundles found",
+  "Please change the selected filters to view Bundles": "Please change the selected filters to view Bundles",
+  "Select all to download forms": "Select all to download forms",
+  "Select for download": "Select for download",
+  "Bundle Description": "Bundle Description",
+  "Conditions": "Conditions",
+  "Enter name": "Enter name",
+  "Enter Description": "Enter Description",
+  "You can change the form order by drag and drop": "You can change the form order by drag and drop",
+  "Form Order": "Form Order",
+  "Form Type": "Form Type",
+  "Add Forms Launch together": "Add Forms Launch together",
+  "Form bundles can save your time by grouping forms together": "Form bundles can save your time by grouping forms together",
+  "Add Forms": "Add Forms",
+  "Criteria": "Criteria",
+  "Create Conditions":  "Create Conditions",
+  " Add Conditions": " Add Conditions",
+  "Select Forms": "Select Forms",
+  "Insert": "Insert",
+  "View Form": "View Form",
+  "Publish this Bundle for Client Users.": "Publish this Bundle for Client Users.",
+  "Total Forms": "Total Forms"
 
 };
 

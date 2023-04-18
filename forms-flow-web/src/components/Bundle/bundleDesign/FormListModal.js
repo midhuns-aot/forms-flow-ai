@@ -26,6 +26,7 @@ import {
   setBundleFormSearch,
 } from "../../../actions/bundleActions";
 import Loading from "../../../containers/Loading";
+import { useTranslation } from "react-i18next";
 
 const StyledTableCell = withStyles(() => ({
   head: {
@@ -41,6 +42,7 @@ const StyledTableCell = withStyles(() => ({
 
 const FormListModal = React.memo(
   ({ showModal, handleModalChange, submitFormSelect }) => {
+    const { t } = useTranslation();
     const dispatch = useDispatch();
     const formsAlreadySelected = useSelector(
       (state) => state.bundle?.selectedForms || []
@@ -175,9 +177,9 @@ const FormListModal = React.memo(
           
           <Modal.Header>
             <div className="d-flex justify-content-between align-items-center w-100">
-              <h4>Select Forms</h4>
+              <h4>{t("Select Forms")}</h4>
               <span style={{ cursor: "pointer" }} onClick={handleModalChange}>
-                <i className="fa fa-times" aria-hidden="true"></i> Close
+                <i className="fa fa-times" aria-hidden="true"></i> {t("Close")}
               </span>
             </div>
           </Modal.Header>
@@ -190,7 +192,7 @@ const FormListModal = React.memo(
                 <FormControl 
                   value={search}
                   onChange={(e)=>{setSearch(e.target.value);}}
-                  placeholder="Search..."
+                  placeholder={t("Search...")}
                   onKeyDown={(e)=> e.keyCode == 13 ? handleSearch() : ""}
                   style={{ backgroundColor: "#ffff" }}
                 />
@@ -220,13 +222,13 @@ const FormListModal = React.memo(
                             <StyledTableCell></StyledTableCell>
                             <StyledTableCell>
                             <span className="sort-cell">
-                            <span> Form Name</span>
+                            <span> {t("Form Name")}</span>
                               <span >   
                              {isAscending ? (
                                 <i
                                 className="fa fa-sort-alpha-asc m"
                                 onClick={() => {updateSort("desc");}}
-                                data-toggle="tooltip"  title="Descending"
+                                data-toggle="tooltip"  title={t("Descending")}
                                 style={{
                                   cursor: "pointer",
                                   fontSize : "16px",
@@ -238,7 +240,7 @@ const FormListModal = React.memo(
                                 <i
                                 className="fa fa-sort-alpha-desc"
                                 onClick={() => {updateSort("asc");}}
-                                data-toggle="tooltip"  title="Ascending" 
+                                data-toggle="tooltip"  title={t("Ascending")} 
                                 style={{
                                   cursor: "pointer",
                                   fontSize : "16px",
@@ -251,8 +253,8 @@ const FormListModal = React.memo(
                               </span>
                       </span>
                             </StyledTableCell>
-                            <StyledTableCell>Type</StyledTableCell>
-                            <StyledTableCell>Action</StyledTableCell>
+                            <StyledTableCell>{t("Type")}</StyledTableCell>
+                            <StyledTableCell>{t("Action")}</StyledTableCell>
                           </TableRow>
                         </TableHead>
                         <TableBody>
@@ -309,7 +311,7 @@ const FormListModal = React.memo(
                   </LoadingOverlay>
                 ) : (
                   <div className="w-100  d-flex align-items-center justify-content-center" style={{height:"200px"}}> 
-                    <h3> No forms found</h3>
+                    <h3> {t("No forms found")}</h3>
                   </div>
                 )}
               </>
@@ -332,8 +334,8 @@ const FormListModal = React.memo(
                 }}
               />
               <span className="ml-2 mb-3">
-                Showing {(limit * pageNo ) - (limit - 1)} to{" "}
-                {limit * pageNo > totalForms ? totalForms : limit * pageNo} of{" "}
+                {t("Showing")} {(limit * pageNo ) - (limit - 1)} {t("to")}{" "}
+                {limit * pageNo > totalForms ? totalForms : limit * pageNo} {t("of")}{" "}
                 {totalForms}
               </span>
             </div>
@@ -342,7 +344,7 @@ const FormListModal = React.memo(
               className="btn btn-secondary mr-2"
               onClick={handleModalChange}
             >
-              Cancel
+              {t("Cancel")}
             </button>
             <button
               className="btn btn-primary"
@@ -351,7 +353,7 @@ const FormListModal = React.memo(
                 submitFormSelect(seletedForms);
               }}
             >
-              Insert
+              {t("Insert")}
             </button>
               </div>
           </Modal.Footer>

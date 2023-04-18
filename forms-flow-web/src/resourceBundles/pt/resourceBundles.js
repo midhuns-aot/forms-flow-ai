@@ -276,8 +276,34 @@ export const RESOURCE_BUNDLES_PT = {
   "Click Here to Copy":"Clique aqui para copiar",
   "Resources":"Recursos",
   "Duplicate form created successfully":"Formulário duplicado criado com sucesso",
-  "Revert": "Reverter"
-
-
+  "Revert": "Reverter",
+  "Bundle Name": "Nome do pacote",
+  "View/Edit": "Visualizar edição",
+  "Create Bundle": "Criar pacote",
+  "Rows per page": "Linhas por página",
+  "entries": "entradas",
+  "Form Bundle": "Pacote de formulários",
+  "No bundles found": "Nenhum pacote encontrado",
+  "Please change the selected filters to view Bundles": "Por favor, altere os filtros selecionados para ver os pacotes",
+  "Select all to download forms": "Selecione tudo para baixar os formulários",
+  "Select for download": "Selecione para baixar",
+  "Bundle Description": "Descrição do Pacote",
+  "Conditions": "condições",
+  "Enter name": "Insira o nome",
+  "Enter Description": "Insira a descrição",
+  "You can change the form order by drag and drop": "Você pode alterar a ordem do formulário arrastando e soltando",
+  "Form Order": "Pedido de formulário",
+  "Form Type": "Tipo de formulário",
+  "Add Forms Launch together": "Adicionar formulários lançados juntos",
+  "Form bundles can save your time by grouping forms together": "Pacotes de formulários podem economizar seu tempo agrupando formulários",
+  "Add Forms": "Adicionar formulários",
+  "Criteria": "Critério",
+  "Create Conditions": "Criar Condições",
+  " Add Conditions": "Adicionar condições",
+  "Select Forms": "Selecionar formulários",
+  "Insert": "Inserir",
+  "View Form": "Ver formulário",
+  "Publish this Bundle for Client Users.": "Publique este pacote para usuários clientes",
+  "Total Forms": "Formulários totais"
 
 };

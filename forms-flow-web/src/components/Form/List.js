@@ -509,8 +509,8 @@ const List = React.memo((props) => {
         textColor="primary"
         onChange={handleTabChange} 
       >
-        <Tab label="Forms" />
-       { isDesigner && <Tab label="Form Bundle"/>}
+        <Tab label= {t("Forms")} />
+       { isDesigner && <Tab label= {t("Form Bundle")} />}
     
       </Tabs>
       <div className="flex-item-right">
