@@ -279,8 +279,34 @@ export const RESOURCE_BUNDLES_DE = {
   "Click Here to Copy":"Klicken Sie hier, um zu kopieren",
   "Resources":"Bronnen",
   "Duplicate form created successfully":"Doppeltes Formular erfolgreich erstellt",
-  "Revert": "Zurückkehren"
-
-
+  "Revert": "Zurückkehren",
+  "Bundle Name": "Bündelname",
+  "View/Edit": "Anzeigen/Bearbeiten",
+  "Create Bundle": "Bündel erstellen",
+  "Rows per page": "Zeilen pro Seite",
+  "entries": "Einträge",
+  "Form Bundle": "Formularbündel",
+  "No bundles found": "Keine Pakete gefunden",
+  "Please change the selected filters to view Bundles": "Bitte ändern Sie die ausgewählten Filter, um Bundles anzuzeigen",
+  "Select all to download forms": "Wählen Sie alle aus, um Formulare herunterzuladen",
+  "Select for download": "Zum Herunterladen auswählen",
+  "Bundle Description": "Bündelbeschreibung",
+  "Conditions": "Bedingungen",
+  "Enter name": "Name eingeben",
+  "Enter Description": "Beschreibung eingeben",
+  "You can change the form order by drag and drop": "Sie können die Formularreihenfolge per Drag and Drop ändern",
+  "Form Order": "Bestellformular",
+  "Form Type": "Formulartyp",
+  "Add Forms Launch together": "Fügen Sie Forms Launch zusammen hinzu",
+  "Form bundles can save your time by grouping forms together": "Formularbündel können Ihre Zeit sparen, indem Sie Formulare gruppieren",
+  "Add Forms": "Formulare hinzufügen",
+  "Criteria": "Kriterien",
+  "Create Conditions": "Bedingungen schaffen",
+  " Add Conditions": "Bedingungen hinzufügen",
+  "Select Forms": "Wählen Sie Formulare aus",
+  "Insert": "Einfügung",
+  "View Form": "Formular anzeigen",
+  "Publish this Bundle for Client Users.": "Veröffentlichen Sie dieses Bundle für Client-Benutzer",
+  "Total Forms": "Gesamtformen"
 
 };

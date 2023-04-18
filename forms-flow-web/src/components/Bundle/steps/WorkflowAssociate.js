@@ -8,10 +8,11 @@ import SaveNext from "./SaveAndNext";
 import Select from "react-select";
 import { DEFAULT_WORKFLOW } from "../../../constants/taskConstants";
 import { setWorkflowAssociation } from '../../../actions/processActions';
-
+import { useTranslation } from 'react-i18next';
 
 
 const WorkflowAssociate = ({handleBack,handleNext,activeStep,steps,initialMode}) => {
+   const { t } = useTranslation();
   const dispatch = useDispatch();
   const process = useSelector((state) => state.process.processList);
   const workflow = useSelector((state) => state.process.workflowAssociated);
@@ -41,7 +42,7 @@ const WorkflowAssociate = ({handleBack,handleNext,activeStep,steps,initialMode})
   >
           <div className='d-flex align-items-center justify-content-between w-100'>
           <Button variant="primary" onClick={()=>{setDisableWorkflow(false);}}>
-            Edit
+            {t("Edit")}
           </Button>
           <div>
           <SaveNext
@@ -72,7 +73,7 @@ const WorkflowAssociate = ({handleBack,handleNext,activeStep,steps,initialMode})
               <CardContent>
                 <Grid item xs={12} sm={6} spacing={3}>
                   <span className="fontsize-16">
-                    Please select from one of the following workflows.
+                    {t("Please select from one of the following workflows.")}
                   </span>
                   <Select
                     options={processList}

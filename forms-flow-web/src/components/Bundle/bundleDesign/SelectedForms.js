@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { MULTITENANCY_ENABLED } from "../../../constants/constants";
 import _capitalize from "lodash/capitalize";
 import { setBundleSelectedForms } from "../../../actions/bundleActions";
+import { useTranslation } from "react-i18next";
 const StyledTableCell = withStyles(() => ({
   head: {
     backgroundColor: "#4559b5",
@@ -22,6 +23,8 @@ const StyledTableCell = withStyles(() => ({
 }))(TableCell);
 
 const SelectedForms = ({ handleModalChange, selectedForms, deleteForm }) => {
+
+  const { t } = useTranslation();
   const dispatch = useDispatch(); 
   const tenantKey = useSelector((state) => state.tenants?.tenantId);
   const redirectUrl = MULTITENANCY_ENABLED ? `/tenant/${tenantKey}/` : "/";
@@ -58,11 +61,11 @@ const SelectedForms = ({ handleModalChange, selectedForms, deleteForm }) => {
           <TableHead>
             <TableRow>
             <StyledTableCell align="left"></StyledTableCell>
-              <StyledTableCell align="left">Form Order</StyledTableCell>
-              <StyledTableCell align="left">Form Name</StyledTableCell>
-              <StyledTableCell align="left">Form Type</StyledTableCell>
-              <StyledTableCell align="right">View</StyledTableCell>
-              <StyledTableCell align="right">Action</StyledTableCell>
+              <StyledTableCell align="left">{t("Form Order")}</StyledTableCell>
+              <StyledTableCell align="left">{t("Form Name")}</StyledTableCell>
+              <StyledTableCell align="left">{t("Form Type")}</StyledTableCell>
+              <StyledTableCell align="right">{t("View")}</StyledTableCell>
+              <StyledTableCell align="right">{t("Action")}</StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody style={{cursor:'move'}}>
@@ -89,7 +92,7 @@ const SelectedForms = ({ handleModalChange, selectedForms, deleteForm }) => {
                       className="fa fa-external-link mr-2"
                       aria-hidden="true"
                     ></i>
-                    View Form
+                    {t("View Form")}
                   </button>
                 </StyledTableCell>
                 <StyledTableCell align="right">
@@ -107,9 +110,9 @@ const SelectedForms = ({ handleModalChange, selectedForms, deleteForm }) => {
             {!selectedForms?.length ? (
               <TableRow>
                 <TableCell align="center" colSpan="8">
-                  <h4>Add Forms Launch together</h4>
+                  <h4>{t("Add Forms Launch together")}</h4>
                   <h6>
-                    Form bundles can save your time by grouping forms together
+                    {t("Form bundles can save your time by grouping forms together")}
                   </h6>
                 </TableCell>
               </TableRow>
@@ -123,7 +126,7 @@ const SelectedForms = ({ handleModalChange, selectedForms, deleteForm }) => {
                   onClick={handleModalChange}
                 >
                   <i className="fa fa-plus mr-2"></i>
-                  Add Forms
+                  {t("Add Forms")}
                 </button>
               </TableCell>
             </TableRow>
