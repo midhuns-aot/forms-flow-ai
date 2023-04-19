@@ -17,7 +17,9 @@ import {
 import LoadingOverlay from "react-loading-overlay";
 //import { format } from 'date-fns'; // 21K (gzipped: 5.8K)
 import moment from 'moment'; 
+import { useTranslation } from "react-i18next";
 function BundleTable() {
+  const { t } = useTranslation();
   const dispatch = useDispatch(); 
   const bpmForms = useSelector((state) => state.bpmForms);
   const formData = (() => bpmForms.forms)() || [];
@@ -105,8 +107,8 @@ function BundleTable() {
           className="d-flex align-items-center justify-content-center flex-column w-100"
           style={{minHeight:"300px"}}
         >
-          <h3>No bundles found</h3>
-          <p>Please change the selected filters to view Bundles</p>
+          <h3>{t("No bundles found")}</h3>
+          <p>{t("Please change the selected filters to view Bundles")}</p>
         </div>
       </td>
       </tr>
@@ -131,7 +133,7 @@ function BundleTable() {
                   value={search}
                   onChange={(e)=>{setSearch(e.target.value);}}
                   onKeyDown={(e)=> e.keyCode == 13 ? handleSearch() : ""}
-                  placeholder="Search..."
+                  placeholder= {t("Search...")}
                   style={{ backgroundColor: "#ffff" }}
                 />
                 {search && (
@@ -152,13 +154,13 @@ function BundleTable() {
           <tr className="table-header table-bordered" style={{backgroundColor:'#F2F2F2'}}>
             <th scope="col">
             <span className="sort-cell">
-                  <span> Bundle Name</span>
+                  <span>{t("Bundle Name")}</span>
                     <span >       
                    {isAscending ? (
                       <i
                       className="fa fa-sort-alpha-asc m"
                       onClick={() => {updateSort("desc");}}
-                      data-toggle="tooltip"  title="Descending"
+                      data-toggle="tooltip"  title={t("Descending")}
                       style={{
                         cursor: "pointer",
                         fontSize : "16px",
@@ -170,7 +172,7 @@ function BundleTable() {
                       <i
                       className="fa fa-sort-alpha-desc"
                       onClick={() => {updateSort("asc");}}
-                      data-toggle="tooltip"  title="Ascending" 
+                      data-toggle="tooltip"  title={t("Ascending" )}
                       style={{
                         cursor: "pointer",
                         fontSize : "16px",
@@ -183,8 +185,8 @@ function BundleTable() {
                     </span> 
             </span>
             </th>
-            <th scope="col">Created Date</th>
-            <th scope="col">Operations</th>
+            <th scope="col">{t("Created Date")}</th>
+            <th scope="col">{t("Operations")}</th>
           </tr>
         </thead>
         {
@@ -216,7 +218,7 @@ function BundleTable() {
           <div className="d-flex justify-content-between align-items-center">
           <div>
             <span>
-              Rows per page
+              {t("Rows per page")}
               <DropdownButton
                 className="ml-2"
                 drop="down"
@@ -238,9 +240,9 @@ function BundleTable() {
               </DropdownButton>
             </span>
             <span className="ml-2 mb-3">
-              Showing {(limit * pageNo ) - (limit - 1)} to{" "}
-                  {limit * pageNo > totalForms ? totalForms : limit * pageNo} of{" "}
-                  {totalForms} entries
+              {t("Showing")} {(limit * pageNo ) - (limit - 1)} {t("to")}{" "}
+                  {limit * pageNo > totalForms ? totalForms : limit * pageNo} {t("of")}{" "}
+                  {totalForms} {t("entries")}
             </span>
           </div>
           <div className="d-flex align-items-center">

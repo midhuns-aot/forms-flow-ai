@@ -6,6 +6,7 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import { withStyles } from "@material-ui/styles";
+import { useTranslation } from "react-i18next";
  
 const StyledTableCell = withStyles(() => ({
   head: {
@@ -20,15 +21,16 @@ const StyledTableCell = withStyles(() => ({
 
 const RulesTable = ({selectedForms = [],handleModalChange,
   selectRuleForEdit,deleteRule}) => {
+    const { t } = useTranslation();
   return (
     <TableContainer style={{ border: "1px solid #dbdbdb" }}>
     <Table aria-label="simple table">
       <TableHead>
         <TableRow> 
-          <StyledTableCell align="left">Form Name</StyledTableCell>
-          <StyledTableCell align="left">Criteria</StyledTableCell>
+          <StyledTableCell align="left">{t("Form Name")}</StyledTableCell>
+          <StyledTableCell align="left">{t("Criteria")}</StyledTableCell>
           {/* <StyledTableCell align="left">Rule Action</StyledTableCell> */}
-          <StyledTableCell align="right">Action</StyledTableCell>
+          <StyledTableCell align="right">{t("Action")}</StyledTableCell>
  
         </TableRow>
       </TableHead>
@@ -62,7 +64,7 @@ const RulesTable = ({selectedForms = [],handleModalChange,
         {!selectedForms.some((i)=> i.rules?.length > 0) ? (
           <TableRow>
             <TableCell align="center" colSpan="8">
-              <h4>Create Conditions</h4>
+              <h4>{t("Create Conditions")}</h4>
             </TableCell>
           </TableRow>
         ) : (
@@ -72,7 +74,7 @@ const RulesTable = ({selectedForms = [],handleModalChange,
           <TableCell align="center" colSpan="8">
             <button className="btn btn-outline-primary" onClick={handleModalChange}>
               <i className="fa fa-plus mr-2"></i>
-              Add Conditions
+             {t(" Add Conditions")}
             </button>
           </TableCell>
         </TableRow>

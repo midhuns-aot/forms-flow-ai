@@ -29,8 +29,9 @@ import {
   publicDraftCreate,
   publicDraftUpdate,
 } from "../../../apiManager/services/draftService";
+import { useTranslation } from "react-i18next";
 const BundleSubmit = () => {
- 
+    const { t } = useTranslation();
     const { bundleId } = useParams();
     const dispatch = useDispatch();
     const loading = useSelector((state) => state.bundle.bundleLoading);
@@ -239,7 +240,7 @@ const BundleSubmit = () => {
     <div className="p-3">
       <div className="d-flex align-items-center">
         {isAuthenticated ? (
-          <Link title="go back" to={`${redirectUrl}${isDesigner ? 'bundle' : 'form'}`}>
+          <Link title={t("go back")} to={`${redirectUrl}${isDesigner ? 'bundle' : 'form'}`}>
             <i className="fa fa-chevron-left fa-lg" />
           </Link>
         ) : null}
@@ -270,7 +271,7 @@ const BundleSubmit = () => {
 
           {notified && poll && (
             <SavingLoading
-              text={draftSaved ? "Saved to Applications/Drafts" : "Saving..."}
+              text={draftSaved ? t("Saved to Applications/Drafts") : "Saving..."}
               saved={draftSaved}
             />
           )}

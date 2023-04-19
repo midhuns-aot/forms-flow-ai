@@ -30,8 +30,10 @@ import {
 import { useHistory } from "react-router-dom";
 import { setBundleSelectedForms } from "../../../actions/bundleActions";
 import { Translation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const BundleCreate = ({ mode }) => {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const history = useHistory();
   const bundleData = useSelector((state) => state.process.formProcessList);
@@ -218,7 +220,7 @@ const BundleCreate = ({ mode }) => {
                 dispatch(setBundleSelectedForms(selectedFormsBackup));
               }}
             >
-              Cancel
+              {t("Cancel")}
             </button>
           ) : (
             ""
@@ -242,7 +244,7 @@ const BundleCreate = ({ mode }) => {
           <div className="mt-2 align-items-center">
             <div className="m-3 font-weight-bold">
               <label>
-                Bundle Name<span className="ml-1 text-danger">*</span>
+                {t("Bundle Name")}<span className="ml-1 text-danger">*</span>
               </label>
               <input
                 value={bundleName}
@@ -251,12 +253,12 @@ const BundleCreate = ({ mode }) => {
                 }}
                 type="text"
                 className="form-control"
-                placeholder="Enter name"
+                placeholder={t("Enter name")}
               />
             </div>
             <div className="m-3 font-weight-bold">
               <label>
-                Bundle Description<span className="ml-1 text-danger">*</span>
+                {t("Bundle Description")}<span className="ml-1 text-danger">*</span>
               </label>
               <textarea
                 value={bundleDescription}
@@ -265,7 +267,7 @@ const BundleCreate = ({ mode }) => {
                 }}
                 type="text"
                 className="form-control"
-                placeholder="Enter Description"
+                placeholder={t("Enter Description")}
               />
             </div>
           </div>
@@ -273,19 +275,19 @@ const BundleCreate = ({ mode }) => {
         <section>
           <div className="m-3 font-weight-bold">
             <label>
-              Forms<span className="ml-1 text-danger">*</span>
+              {t("Forms")}<span className="ml-1 text-danger">*</span>
             </label>
             <span className="ml-1">
               <i
                 className="fa fa-info-circle text-primary cursor-pointer"
                 data-toggle="tooltip"
-                title="You can change the form order by drag and drop"
+                title={t("You can change the form order by drag and drop")}
               ></i>
             </span>
             <FormSelect />
           </div>
           <div className="m-3 font-weight-bold">
-            <label>Conditions</label>
+            <label>{t("Conditions")}</label>
             <Rule />
           </div>
         </section>

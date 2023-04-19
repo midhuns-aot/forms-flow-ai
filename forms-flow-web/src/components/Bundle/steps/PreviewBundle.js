@@ -10,7 +10,10 @@ import { useDispatch, useSelector } from "react-redux";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
+import { useTranslation } from "react-i18next";
+
 const PreviewBundle = ({ handleNext, handleBack, activeStep, isLastStep }) => {
+  const {t} = useTranslation();
   const tenantKey = useSelector((state) => state.tenants?.tenantId);
   const dispatch = useDispatch();
   const redirectUrl = MULTITENANCY_ENABLED ? `/tenant/${tenantKey}/` : "/";
@@ -77,7 +80,7 @@ const PreviewBundle = ({ handleNext, handleBack, activeStep, isLastStep }) => {
             }}
           >
             <i className="fa fa-pencil" aria-hidden="true" />
-            &nbsp;&nbsp; Edit Bundle
+            &nbsp;&nbsp; {t("Edit Bundle")}
           </button>
           <SaveNext
             handleNext={handleNext}
@@ -115,14 +118,14 @@ const PreviewBundle = ({ handleNext, handleBack, activeStep, isLastStep }) => {
                       disabled={formStep == 0}
                       className="btn btn-secondary mr-2"
                     >
-                      Previous Form
+                      {t("Previous Form")}
                     </button>
                     <button
                       onClick={handleNextForm}
                       disabled={forms.length - 1 === formStep}
                       className="btn btn-primary"
                     >
-                      Next Form
+                      {t("Next Form")}
                     </button>
                   </div>
                   ) : ""
@@ -132,7 +135,7 @@ const PreviewBundle = ({ handleNext, handleBack, activeStep, isLastStep }) => {
           </div>
         </div>
       ) : (
-        <h3 className="text-center">No Forms Selected</h3>
+        <h3 className="text-center">{t("No Forms Selected")}</h3>
       )}
     </div>
   );

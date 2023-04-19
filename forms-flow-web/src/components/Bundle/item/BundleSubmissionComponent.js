@@ -18,9 +18,10 @@ import {
   setFormFailureErrorData,
 } from "../../../actions/formActions";
 import { executeRule } from "../../../apiManager/services/bundleServices";
-
+import { useTranslation } from "react-i18next";
 
 const BundleSubmissionComponent = ({ readOnly, onSubmit ,onChange}) => {
+  const {t} = useTranslation();
   const dispatch = useDispatch();
   const onChangeFunction = onChange ? onChange : ()=>{};
   const options = readOnly ? { readOnly: true, viewAsHtml: true } : {};
@@ -222,7 +223,7 @@ const BundleSubmissionComponent = ({ readOnly, onSubmit ,onChange}) => {
                       onClick={handleBackForm}
                       className="btn btn-secondary mr-2"
                     >
-                      Previous Form
+                      {t("Previous Form")}
                     </button>
                   )}
                   {readOnly && selectedForms.length - 1 == formStep.step ? (
