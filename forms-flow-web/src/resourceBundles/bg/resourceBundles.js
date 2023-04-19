@@ -231,8 +231,8 @@ export const RESOURCE_BUNDLES_BG = {
     "Changing the form title will not affect the existing applications. It will only update in the newly created applications. Press Save Changes to continue or cancel the changes.":"Промяната на заглавието на формуляра няма да засегне съществуващите приложения. Той ще се актуализира само в новосъздадените приложения. Натиснете Запазване на промените, за да продължите или отмените промените.",
     "Error while saving Form":"Грешка при запазване на формуляра",
     "Click here to go back":"Щракнете тук, за да се върнете",
-    "Applications are submitted against":"Заявленията се подават срещу",
-    "Application is submitted against":"Заявлението се подава срещу",
+    " Applications are submitted against":" Заявленията се подават срещу",
+    " Application is submitted against":" Заявлението се подава срещу",
     ". Are you sure want to delete ?":". Наистина ли искате да изтриете?",
     "Are you sure you wish to delete the form ":"Сигурни ли сте, че искате да изтриете формуляра",
     "Are you sure you wish to delete the form?":"Сигурни ли сте, че искате да изтриете формуляра?",
@@ -278,4 +278,12 @@ export const RESOURCE_BUNDLES_BG = {
     "Resources":"Ресурси",
     "Duplicate form created successfully":"Дублираният формуляр е създаден успешно",
     "Revert": "Връщане",
+
+    "Are you sure you wish to delete the bundle ": "Сигурни ли сте, че искате да изтриете пакета ",
+    "Criteria":"Критерии",
+    "Select Form":"Изберете Формуляр",
+    "Create Condition":"Създаване на условие",
+    "Enter criteria":"Въведете критерии",
+    "Make this form public":"Направете този формуляр публичен",
+    "Enable bundling":"Активиране на групирането",
 };

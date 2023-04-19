@@ -13,6 +13,9 @@ import SaveNext from "./SaveAndNext";
 import { resetFormProcessData, saveFormProcessMapperPut } from "../../../apiManager/services/processServices";
 import { toast } from "react-toastify";
 
+// import { formio_resourceBundles } from "../../../resourceBundles/formio_resourceBundles";
+// import { Form } from "react-formio";
+
 const PreviewAndConfirm = React.memo(
   ({ handleNext, handleBack, activeStep, steps }) => {
     const { t } = useTranslation();
@@ -24,6 +27,10 @@ const PreviewAndConfirm = React.memo(
     const tenantKey = useSelector((state) => state.tenants?.tenantId);
     const redirectUrl = MULTITENANCY_ENABLED ? `/tenant/${tenantKey}/` : "/";
     const [comment , setComment] = useState(bundleData.comments || "");
+    
+    // const {form} = useSelector(state => state.form || {});
+    // const lang = useSelector(state => state.user.lang);
+
 
     const submitData = () => {
       const data = {
@@ -132,6 +139,10 @@ const PreviewAndConfirm = React.memo(
               </form>
             </CardContent>
           </Card>
+          {/* <Form
+          form={form}
+          options={{ readOnly:true, language: lang, i18n: formio_resourceBundles }}
+        /> */}
         </Grid>
       </div>
     );

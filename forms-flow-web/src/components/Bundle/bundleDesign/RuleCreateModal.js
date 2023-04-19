@@ -6,15 +6,17 @@ import { useSelector } from "react-redux";
 
 import Select from "react-select";
 import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 const RuleCreateModal = React.memo(
   ({ showModal, handleModalChange, saveRule, existingRule }) => {
     const bundleSelectedForms = useSelector(
       (state) => state.bundle.selectedForms || []
     );
-
+    
     const [criteria, setCriteria] = useState("");
     const [selectedFormDta, setSelectedFormData] = useState("");
     // const [action, setAction] = useState();
+    const { t } = useTranslation();
 
     const FormOptions = useMemo(() => {
       const filteredForms = bundleSelectedForms.filter((i) => !i.rules?.length);
@@ -67,7 +69,7 @@ const RuleCreateModal = React.memo(
         <Modal show={showModal} size="md">
           <Modal.Header>
             <div className="d-flex justify-content-between align-items-center w-100">
-              <h4>Create Condition</h4>
+              <h4>{t("Create Condition")}</h4>
               <span style={{ cursor: "pointer" }} onClick={handleModalChange}>
                 <i className="fa fa-times" aria-hidden="true"></i>
               </span>
@@ -75,7 +77,7 @@ const RuleCreateModal = React.memo(
           </Modal.Header>
           <Modal.Body>
             <div className="form-group">
-              <label>Criteria</label>
+              <label>{t("Criteria")}</label>
               <textarea 
                 rows={5}
                 onChange={(e) => {
@@ -84,14 +86,14 @@ const RuleCreateModal = React.memo(
                 type="text"
                 value={criteria}
                 className="form-control"
-                placeholder="Enter criteria"
+                placeholder={t("Enter criteria")}
               />
 
               <div className="select-style mt-2">
-                <label>Select Form</label>
+                <label>{t("Select Form")}</label>
                 <Select
                   value={selectedFormDta}
-                  placeholder={"Select Form"}
+                  placeholder={t("Select Form")}
                   options={FormOptions}
                   onChange={handleFormSelectChange}
                 />

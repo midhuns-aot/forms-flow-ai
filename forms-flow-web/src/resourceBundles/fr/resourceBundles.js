@@ -234,8 +234,8 @@ export const RESOURCE_BUNDLES_FR = {
   "Changing the form title will not affect the existing applications. It will only update in the newly created applications. Press Save Changes to continue or cancel the changes.":"La modification du titre du formulaire n'affectera pas les applications existantes. Il ne sera mis à jour que dans les applications nouvellement créées. Appuyez sur Enregistrer les modifications pour continuer ou annuler les modifications.",
   "Error while saving Form":"Erreur lors de l'enregistrement du formulaire",
   "Click here to go back":"Cliquez ici pour revenir en arrière",
-  "Applications are submitted against":"Les candidatures sont déposées contre",
-  "Application is submitted against":"La candidature est déposée contre",
+  " Applications are submitted against":" Les candidatures sont déposées contre",
+  " Application is submitted against":" La candidature est déposée contre",
   ". Are you sure want to delete ?":". Voulez-vous vraiment supprimer ?",
   "Are you sure you wish to delete the form ":"Êtes-vous sûr de vouloir supprimer le formulaire",
   "Save Changes":"Save Changes",
@@ -278,7 +278,15 @@ export const RESOURCE_BUNDLES_FR = {
   "Click Here to Copy":"Cliquez ici pour copier",
   "Resources":"Ressources",
   "Duplicate form created successfully":"Formulaire en double créé avec succès",
-  "Revert": "Revenir"
+  "Revert": "Revenir",
+
+  "Are you sure you wish to delete the bundle ":"Êtes-vous sûr de vouloir supprimer le bundle",
+  "Criteria":"Critère",
+  "Select Form":"Sélectionnez le formulaire",
+  "Create Condition":"Créer une condition",
+  "Enter criteria":"Saisir des critères",
+  "Make this form public":"Rendre ce formulaire public",
+  "Enable bundling":"Activer le regroupement",
 
 };
 

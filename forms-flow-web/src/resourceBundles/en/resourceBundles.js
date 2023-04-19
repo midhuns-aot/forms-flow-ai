@@ -233,8 +233,8 @@ export const RESOURCE_BUNDLES_EN = {
   "Error while saving Form":"Error while saving Form",
   "Click here to go back":"Click here to go back",
   "Are you sure you wish to delete the form ":"Are you sure you wish to delete the form ",
-  "Applications are submitted against":"Applications are submitted against",
-  "Application is submitted against":"Application is submitted against",
+  " Applications are submitted against":" Applications are submitted against",
+  " Application is submitted against":" Application is submitted against",
   ". Are you sure want to delete ?":". Are you sure want to delete ?",
   "Save Changes":"Save Changes",
   "Changing the form workflow will not affect the existing applications. It will only update in the newly created applications. Press Save Changes to continue or cancel the changes.":"Changing the form workflow will not affect the existing applications. It will only update in the newly created applications. Press Save Changes to continue or cancel the changes.",
@@ -277,10 +277,16 @@ export const RESOURCE_BUNDLES_EN = {
   "Click Here to Copy":"Click Here to Copy",
   "Resources":"Resources",
   "Duplicate form created successfully":"Duplicate form created successfully",
-  "Revert": "Revert"
+  "Revert": "Revert",
 
-
-
+  "Are you sure you wish to delete the bundle ":"Are you sure you wish to delete the bundle ",
+  "Criteria":"Criteria",
+  "Select Form":"Select Form",
+  "Create Condition":"Create Condition",
+  "Enter criteria":"Enter criteria",
+  "Make this form public": "Make this form public",
+  "Enable bundling":"Enable bundling",
+  
 
 };
 

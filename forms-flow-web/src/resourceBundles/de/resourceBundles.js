@@ -234,8 +234,8 @@ export const RESOURCE_BUNDLES_DE = {
   "Changing the form title will not affect the existing applications. It will only update in the newly created applications. Press Save Changes to continue or cancel the changes.":"Das Ändern des Formulartitels wirkt sich nicht auf die bestehenden Anwendungen aus. Es wird nur in den neu erstellten Anwendungen aktualisiert. Drücken Sie Änderungen speichern, um fortzufahren oder die Änderungen abzubrechen.",
   "Error while saving Form":"Fehler beim Speichern des Formulars",
   "Click here to go back":"Klicke hier um zurück zu kommen",
-  "Applications are submitted against":"Anträge werden dagegen gestellt",
-  "Application is submitted against":"Antrag wird dagegen gestellt",
+  " Applications are submitted against":" Anträge werden dagegen gestellt",
+  " Application is submitted against":" Antrag wird dagegen gestellt",
   ". Are you sure want to delete ?":". Möchten Sie wirklich löschen?",
   "Are you sure you wish to delete the form ":"Möchten Sie das Formular wirklich löschen?",
   "Save Changes":"Save Changes",
@@ -279,8 +279,15 @@ export const RESOURCE_BUNDLES_DE = {
   "Click Here to Copy":"Klicken Sie hier, um zu kopieren",
   "Resources":"Bronnen",
   "Duplicate form created successfully":"Doppeltes Formular erfolgreich erstellt",
-  "Revert": "Zurückkehren"
+  "Revert": "Zurückkehren",
 
+  "Are you sure you wish to delete the bundle ":"Sind Sie sicher, dass Sie das Paket löschen möchten ",
+  "Criteria":"Kriterien",
+  "Select Form":"Wählen Sie Formular aus",
+  "Create Condition":"Bedingung erstellen",
+  "Enter criteria":"Kriterien eingeben",
+  "Make this form public":"Machen Sie dieses Formular öffentlich",
+  "Enable bundling":"Bündelung aktivieren",
 
 
 };

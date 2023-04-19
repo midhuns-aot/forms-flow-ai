@@ -231,8 +231,8 @@ export const RESOURCE_BUNDLES_ZH = {
   "Changing the form title will not affect the existing applications. It will only update in the newly created applications. Press Save Changes to continue or cancel the changes.":"更改表单标题不会影响现有应用程序。它只会在新创建的应用程序中更新。按保存更改以继续或取消更改。",
   "Error while saving Form":"保存表单时出错",
   "Click here to go back":"点击此处回去",
-  "Applications are submitted against":"申请是针对",
-  "Application is submitted against":"申请是针对",
+  " Applications are submitted against":" 申请是针对",
+  " Application is submitted against":" 申请是针对",
   ". Are you sure want to delete ?":".确定要删除吗？",
   "Are you sure you wish to delete the form ":"您确定要删除表格吗 ",
   "Save Changes":"保存更改",
@@ -276,7 +276,15 @@ export const RESOURCE_BUNDLES_ZH = {
   "Click Here to Copy":"点击这里复制",
   "Resources":"资源",
   "Duplicate form created successfully":"成功创建重复表单",
-  "Revert": "恢复"
+  "Revert": "恢复",
+
+  "Are you sure you wish to delete the bundle ":"您确定要删除捆绑包吗 ",
+  "Criteria":"标准",
+  "Select Form":"选择表格",
+  "Create Condition":"创造条件",
+  "Enter criteria":"输入标准",
+  "Make this form public":"公开此表格",
+  "Enable bundling":"启用捆绑",
 
 };
 

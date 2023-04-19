@@ -47,8 +47,8 @@ export const formio_resourceBundles = {
       "Are you sure you wish to delete the form ",
     "Are you sure you wish to delete the form?":
       "Are you sure you wish to delete the form?",
-    "Applications are submitted against": "Applications are submitted against",
-    "Application is submitted against": "Application is submitted against",
+    " Applications are submitted against": " Applications are submitted against",
+    " Application is submitted against": " Application is submitted against",
     ". Are you sure want to delete ?": ". Are you sure want to delete ?",
     "Click here to go back": "Click here to go back",
     "Error while saving Form": "Error while saving Form",
@@ -295,7 +295,15 @@ export const formio_resourceBundles = {
     "Process name(s) must not be empty":"Process name(s) must not be empty",
     "URL copied":"URL copied",
     "Click Here to Copy":"Click Here to Copy",
-    "Revert": "Revert"
+    "Revert": "Revert",
+
+    "Are you sure you wish to delete the bundle ":"Are you sure you wish to delete the bundle ",
+    "Criteria":"Criteria",
+    "Select Form":"Select Form",
+    "Create Condition":"Create Condition",
+    "Enter criteria":"Enter criteria",
+    "Make this form public": "Make this form public",
+    "Enable bundling":"Enable bundling",
 
   },
 
@@ -340,8 +348,8 @@ export const formio_resourceBundles = {
     "Changing the form workflow will not affect the existing applications. It will only update in the newly created applications. Press Save Changes to continue or cancel the changes.":
       "更改表单工作流程不会影响现有应用程序。它只会在新创建的应用程序中更新。按保存更改以继续或取消更改。",
     "Save Changes": "保存更改",
-    "Applications are submitted against": "申请是针对",
-    "Application is submitted against": "申请是针对",
+    " Applications are submitted against": " 申请是针对",
+    " Application is submitted against": " 申请是针对",
     ". Are you sure want to delete ?": ".确定要删除吗？",
     "Are you sure you wish to delete the form ": "您确定要删除表格吗 ",
     "Are you sure you wish to delete the form?": "您确定要删除表格吗?",
@@ -1206,7 +1214,16 @@ export const formio_resourceBundles = {
     "Process name(s) must not be empty":"进程名称不能为空",
     "URL copied":"已复制网址",
     "Click Here to Copy":"点击这里复制",
-    "Revert": "恢复"
+    "Revert": "恢复",
+
+    "Are you sure you wish to delete the bundle ":"您确定要删除捆绑包吗 ",
+    "Criteria":"标准",
+    "Select Form":"选择表格",
+    "Create Condition":"创造条件",
+    "Enter criteria":"输入标准",
+    "Make this form public":"公开此表格",
+    "Enable bundling":"启用捆绑",
+
   },
 
   bg: {
@@ -1254,8 +1271,8 @@ export const formio_resourceBundles = {
     "Changing the form workflow will not affect the existing applications. It will only update in the newly created applications. Press Save Changes to continue or cancel the changes.":
       "Промяната на работния процес на формуляра няма да засегне съществуващите приложения. Той ще се актуализира само в новосъздадените приложения. Натиснете Запазване на промените, за да продължите или отмените промените.",
     "Save Changes": "Запазите промените",
-    "Applications are submitted against": "Заявленията се подават срещу",
-    "Application is submitted against": "Заявлението се подава срещу",
+    " Applications are submitted against": " Заявленията се подават срещу",
+    " Application is submitted against": " Заявлението се подава срещу",
     ". Are you sure want to delete ?": ". Наистина ли искате да изтриете?",
     "Are you sure you wish to delete the form ":
       "Сигурни ли сте, че искате да изтриете формуляра",
@@ -2174,7 +2191,15 @@ export const formio_resourceBundles = {
     "Process name(s) must not be empty":"Името(ата) на процесите не трябва да са празни",
     "URL copied":"URL адресът е копиран",
     "Click Here to Copy":"Щракнете тук, за да копирате",
-    "Revert": "Връщане"
+    "Revert": "Връщане",
+
+    "Are you sure you wish to delete the bundle " : "Сигурни ли сте, че искате да изтриете пакета ",
+    "Criteria":"Критерии",
+    "Select Form":"Изберете Формуляр",
+    "Create Condition":"Създаване на условие",
+    "Enter criteria":"Въведете критерии",
+    "Make this form public":"Направете този формуляр публичен",
+    "Enable bundling":"Активиране на групирането",
 
   },
 
@@ -2225,10 +2250,10 @@ export const formio_resourceBundles = {
       "Tem certeza de que deseja excluir o formulário",
     "Are you sure you wish to delete the form?":
       "Tem certeza de que deseja excluir o formulário?",
-    "Applications are submitted against":
-      "As candidaturas são apresentadas contra",
-    "Application is submitted against":
-      "As candidaturas são apresentadas contra",
+    " Applications are submitted against":
+      " As candidaturas são apresentadas contra",
+    " Application is submitted against":
+      " As candidaturas são apresentadas contra",
     ". Are you sure want to delete ?": ". Tem certeza de que deseja excluir?",
     "Click here to go back": "Clique aqui para voltar",
     "Dashboards": "Painéis",
@@ -3137,7 +3162,15 @@ export const formio_resourceBundles = {
     "Process name(s) must not be empty":"O(s) nome(s) do processo não deve(m) estar vazio(s)",
     "URL copied":"URL copiado",
     "Click Here to Copy":"Clique aqui para copiar",
-    "Revert": "Reverter"
+    "Revert": "Reverter",
+
+    "Are you sure you wish to delete the bundle ":"Tem certeza de que deseja excluir o pacote ",
+    "Criteria":"Critério",
+    "Select Form":"Selecione o formulário",
+    "Create Condition":"Criar condição",
+    "Enter criteria":"Insira os critérios",
+    "Make this form public":"Tornar este formulário público",
+    "Enable bundling":"Ativar agrupamento",
 
   },
 
@@ -3187,9 +3220,9 @@ export const formio_resourceBundles = {
       "Êtes-vous sûr de vouloir supprimer le formulaire",
     "Are you sure you wish to delete the form?":
       "Êtes-vous sûr de vouloir supprimer le formulaire?",
-    "Applications are submitted against":
-      "Les candidatures sont déposées contre",
-    "Application is submitted against": "La candidature est déposée contre",
+    " Applications are submitted against":
+      " Les candidatures sont déposées contre",
+    " Application is submitted against": " La candidature est déposée contre",
     ". Are you sure want to delete ?": ". Voulez-vous vraiment supprimer ?",
     "Click here to go back": "Cliquez ici pour revenir en arrière",
     "Dashboards": "Tableaux de bord",
@@ -4108,7 +4141,15 @@ export const formio_resourceBundles = {
     "Process name(s) must not be empty":"Le(s) nom(s) de processus ne doivent pas être vides",
     "URL copied":"URL copiée",
     "Click Here to Copy":"Cliquez ici pour copier",
-    "Revert":"Revenir"
+    "Revert":"Revenir",
+
+    "Are you sure you wish to delete the bundle ":"Êtes-vous sûr de vouloir supprimer le bundle ",
+    "Criteria":"Critère",
+    "Select Form":"Sélectionnez le formulaire",
+    "Create Condition":"Créer une condition",
+    "Enter criteria":"Saisir des critères",
+    "Make this form public":"Rendre ce formulaire public",
+    "Enable bundling":"Activer le regroupement",
 
   },
 
@@ -4161,8 +4202,8 @@ export const formio_resourceBundles = {
       "Möchten Sie das Formular wirklich löschen ",
     "Are you sure you wish to delete the form?":
       "Möchten Sie das Formular wirklich löschen? ",
-    "Applications are submitted against": "Anträge werden dagegen gestellt",
-    "Application is submitted against": "Antrag wird dagegen gestellt",
+    " Applications are submitted against": " Anträge werden dagegen gestellt",
+    " Application is submitted against": " Antrag wird dagegen gestellt",
     ". Are you sure want to delete ?": ". Möchten Sie wirklich löschen?",
     "Click here to go back": "Klicke hier um zurück zu kommen",
     "Dashboards": "Dashboards",
@@ -5082,10 +5123,15 @@ export const formio_resourceBundles = {
     "Process name(s) must not be empty":"Prozessname(n) dürfen nicht leer sein",
     "URL copied":"URL kopiert",
     "Click Here to Copy":"Klicken Sie hier, um zu kopieren",
-    "Revert":"Zurückkehren"
+    "Revert":"Zurückkehren",
 
-
-
+    "Are you sure you wish to delete the bundle ":"Sind Sie sicher, dass Sie das Paket löschen möchten ",
+    "Criteria":"Kriterien",
+    "Select Form":"Wählen Sie Formular aus",
+    "Create Condition":"Bedingung erstellen",
+    "Enter criteria":"Kriterien eingeben",
+    "Make this form public":"Machen Sie dieses Formular öffentlich",
+    "Enable bundling":"Bündelung aktivieren",
 
 
   },

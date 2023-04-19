@@ -29,6 +29,7 @@ import {
 } from "../../../apiManager/services/processServices";
 import { useHistory } from "react-router-dom";
 import { setBundleSelectedForms } from "../../../actions/bundleActions";
+import { Translation } from "react-i18next";
 
 const BundleCreate = ({ mode }) => {
   const dispatch = useDispatch();
@@ -114,7 +115,7 @@ const BundleCreate = ({ mode }) => {
                   push(`${redirectUrl}bundleflow/${form._id}/view-edit`)
                 );
               });
-              toast.success("Bundle created successfully");
+              toast.success(<Translation>{(t)=>t("Bundle Create Successfully")}</Translation>);
             }
           })
         );
