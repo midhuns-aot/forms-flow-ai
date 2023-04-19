@@ -305,7 +305,11 @@ export const RESOURCE_BUNDLES_EN = {
   "Insert": "Insert",
   "View Form": "View Form",
   "Publish this Bundle for Client Users.": "Publish this Bundle for Client Users.",
-  "Total Forms": "Total Forms"
+  "Total Forms": "Total Forms",
+  "Edit Bundle": "Edit Bundle",
+  "Next Form": "Next Form",
+  "Previous Form": "Previous Form",
+  "Forms included under the package": "Forms included under the package"
 
 };
 

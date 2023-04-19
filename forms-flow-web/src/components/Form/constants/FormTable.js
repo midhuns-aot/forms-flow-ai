@@ -131,18 +131,18 @@ function FormTable() {
         <td colSpan={12}>
           <div style={{display: 'flex'}}>
             <div style={{flex: 1, minWidth: '600px', padding: '20px', borderRight: '1px solid black'}}>
-              <h4 className="font-weight-bold">Description</h4>
+              <h4 className="font-weight-bold">{t("Description")}</h4>
               <p>{data}</p>
             </div>
             <div style={{flex: 2, padding: '20px'}} className="ml-5">
             <div className="d-flex justify-content-between align-items-center mb-3">
-      <h4 className="font-weight-bold">Forms included under the package</h4>
+      <h4 className="font-weight-bold">{t("Forms included under the package")}</h4>
     </div>
               <table className="table" style={{minWidth: '600px'}}>
                 <thead>
                   <tr>
-                    <th>Form Order</th>
-                    <th>Form Name</th>
+                    <th>{t("Form Order")}</th>
+                    <th>{t("Form Name")}</th>
                   </tr>
                 </thead>
                 <tbody>

@@ -307,6 +307,10 @@ export const RESOURCE_BUNDLES_DE = {
   "Insert": "Einfügung",
   "View Form": "Formular anzeigen",
   "Publish this Bundle for Client Users.": "Veröffentlichen Sie dieses Bundle für Client-Benutzer",
-  "Total Forms": "Gesamtformen"
+  "Total Forms": "Gesamtformen",
+  "Edit Bundle": "Bündel bearbeiten",
+  "Next Form": "Nächstes Formular",
+  "Previous Form": "Vorheriges Formular",
+  "Forms included under the package": "Formulare im Paket enthalten"
 
 };

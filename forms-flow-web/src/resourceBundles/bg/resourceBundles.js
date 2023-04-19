@@ -305,6 +305,10 @@ export const RESOURCE_BUNDLES_BG = {
     "Insert": "Поставете",
     "View Form": "Преглед на формуляра",
     "Publish this Bundle for Client Users.": "Публикувайте този пакет за клиентски потребители",
-    "Total Forms": "Общо формуляри"
+    "Total Forms": "Общо формуляри",
+    "Edit Bundle": "Редактиране на пакет",
+    "Next Form": "Следваща форма",
+    "Previous Form": "Предишна форма",
+    "Forms included under the package": "Формуляри, включени в пакета"
 
 };

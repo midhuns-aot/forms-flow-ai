@@ -304,7 +304,11 @@ export const RESOURCE_BUNDLES_ZH = {
   "Insert": "插入",
   "View Form": "查看表格",
   "Publish this Bundle for Client Users.": "为客户端用户发布这个包",
-  "Total Forms": "总表格"
+  "Total Forms": "总表格",
+  "Edit Bundle": "编辑捆绑包",
+  "Next Form": "下一个表格",
+  "Previous Form": "以前的表格",
+  "Forms included under the package": "包中包含的表格"
 
 };
 

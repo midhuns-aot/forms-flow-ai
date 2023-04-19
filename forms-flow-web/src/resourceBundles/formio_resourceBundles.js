@@ -323,7 +323,11 @@ export const formio_resourceBundles = {
     "Insert": "Insert",
     "View Form": "View Form",
     "Publish this Bundle for Client Users.": "Publish this Bundle for Client Users.",
-    "Total Forms": "Total Forms"
+    "Total Forms": "Total Forms",
+    "Edit Bundle": "Edit Bundle",
+    "Next Form": "Next Form",
+    "Previous Form": "Previous Form",
+    "Forms included under the package": "Forms included under the package"
   
   },
 
@@ -1262,7 +1266,11 @@ export const formio_resourceBundles = {
     "Insert": "插入",
     "View Form": "查看表格",
     "Publish this Bundle for Client Users.": "为客户端用户发布这个包",
-    "Total Forms": "总表格"
+    "Total Forms": "总表格",
+    "Edit Bundle": "编辑捆绑包",
+    "Next Form": "下一个表格",
+    "Previous Form": "以前的表格",
+    "Forms included under the package": "包中包含的表格"
 
   },
 
@@ -2259,7 +2267,11 @@ export const formio_resourceBundles = {
     "Insert": "Поставете",
     "View Form": "Преглед на формуляра",
     "Publish this Bundle for Client Users.": "Публикувайте този пакет за клиентски потребители",
-    "Total Forms": "Общо формуляри"
+    "Total Forms": "Общо формуляри",
+    "Edit Bundle": "Редактиране на пакет",
+    "Next Form": "Следваща форма",
+    "Previous Form": "Предишна форма",
+    "Forms included under the package": "Формуляри, включени в пакета"
 
   },
 
@@ -3250,7 +3262,11 @@ export const formio_resourceBundles = {
     "Insert": "Inserir",
     "View Form": "Ver formulário",
     "Publish this Bundle for Client Users.": "Publique este pacote para usuários clientes",
-    "Total Forms": "Formulários totais"
+    "Total Forms": "Formulários totais",
+    "Edit Bundle": "Editar pacote",
+    "Next Form": "Próximo formulário",
+    "Previous Form": "Formulário anterior",
+    "Forms included under the package": "Formulários incluídos no pacote"
 
   },
 
@@ -4249,7 +4265,11 @@ export const formio_resourceBundles = {
     "Insert": "Insérer",
     "View Form": "Afficher le formulaire",
     "Publish this Bundle for Client Users.": "Publier ce bundle pour les utilisateurs clients",
-    "Total Forms": "Nombre total de formulaires"
+    "Total Forms": "Nombre total de formulaires",
+    "Edit Bundle": "Modifier le groupe",
+    "Next Form": "Formulaire suivant",
+    "Previous Form": "Formulaire précédent",
+    "Forms included under the package": "Formulaires inclus dans le forfait"
 
   },
 
@@ -5251,7 +5271,11 @@ export const formio_resourceBundles = {
     "Insert": "Einfügung",
     "View Form": "Formular anzeigen",
     "Publish this Bundle for Client Users.": "Veröffentlichen Sie dieses Bundle für Client-Benutzer",
-    "Total Forms": "Gesamtformen"
+    "Total Forms": "Gesamtformen",
+    "Edit Bundle": "Bündel bearbeiten",
+    "Next Form": "Nächstes Formular",
+    "Previous Form": "Vorheriges Formular",
+    "Forms included under the package": "Formulare im Paket enthalten"
 
   },
 };
