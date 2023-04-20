@@ -310,7 +310,6 @@ export const RESOURCE_BUNDLES_DE = {
   "Add Forms Launch together": "Fügen Sie Forms Launch zusammen hinzu",
   "Form bundles can save your time by grouping forms together": "Formularbündel können Ihre Zeit sparen, indem Sie Formulare gruppieren",
   "Add Forms": "Formulare hinzufügen",
-  "Criteria": "Kriterien",
   "Create Conditions": "Bedingungen schaffen",
   " Add Conditions": "Bedingungen hinzufügen",
   "Select Forms": "Wählen Sie Formulare aus",

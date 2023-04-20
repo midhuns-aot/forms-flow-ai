@@ -306,7 +306,6 @@ export const RESOURCE_BUNDLES_BG = {
     "Add Forms Launch together": "Добавете Forms Launch заедно",
     "Form bundles can save your time by grouping forms together": "Пакетите формуляри могат да ви спестят време чрез групиране на формуляри заедно",
     "Add Forms": "Добавете формуляри",
-    "Criteria": "Критерии",
     "Create Conditions": "Създаване на условия",
     " Add Conditions": "Добавяне на условия",
     "Select Forms": "Изберете Формуляри",

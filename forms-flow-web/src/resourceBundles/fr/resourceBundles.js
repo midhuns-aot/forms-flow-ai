@@ -281,7 +281,6 @@ export const RESOURCE_BUNDLES_FR = {
   "Revert": "Revenir",
 
   "Are you sure you wish to delete the bundle ":"Êtes-vous sûr de vouloir supprimer le bundle",
-  "Criteria":"Critère",
   "Select Form":"Sélectionnez le formulaire",
   "Create Condition":"Créer une condition",
   "Enter criteria":"Saisir des critères",

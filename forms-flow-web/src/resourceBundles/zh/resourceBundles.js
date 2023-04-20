@@ -279,7 +279,6 @@ export const RESOURCE_BUNDLES_ZH = {
   "Revert": "恢复",
 
   "Are you sure you wish to delete the bundle ":"您确定要删除捆绑包吗 ",
-  "Criteria":"标准",
   "Select Form":"选择表格",
   "Create Condition":"创造条件",
   "Enter criteria":"输入标准",
