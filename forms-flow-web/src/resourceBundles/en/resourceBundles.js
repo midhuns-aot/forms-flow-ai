@@ -302,8 +302,7 @@ export const RESOURCE_BUNDLES_EN = {
   "Enter role ID": "Enter role ID",
   "Create Filter": "Create Filter",
   "Select a task in the List":"Select a task in the List",
-  "Select a specific task from the provided list of options. Your selection will determine the task you will be working on or interacting with.":"Select a specific task from the provided list of options. Your selection will determine the task you will be working on or interacting with."
-
+  "Select a specific task from the provided list of options. Your selection will determine the task you will be working on or interacting with.":"Select a specific task from the provided list of options. Your selection will determine the task you will be working on or interacting with.",
 
 
 };

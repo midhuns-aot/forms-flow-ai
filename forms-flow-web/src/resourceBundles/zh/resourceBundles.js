@@ -301,7 +301,8 @@ export const RESOURCE_BUNDLES_ZH = {
   "Enter role ID": "输入角色 ID",
   "Create Filter": "创建过滤器",
   "Select a task in the List":"在列表中选择一个任务",
-  "Select a specific task from the provided list of options. Your selection will determine the task you will be working on or interacting with.":"从提供的选项列表中选择特定任务。 您的选择将决定您将处理或与之交互的任务。"
+  "Select a specific task from the provided list of options. Your selection will determine the task you will be working on or interacting with.":"从提供的选项列表中选择特定任务。 您的选择将决定您将处理或与之交互的任务。",
+
 
 };
 
